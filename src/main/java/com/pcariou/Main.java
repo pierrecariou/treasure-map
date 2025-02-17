@@ -12,7 +12,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         if (args.length < 2 || args.length > 3) {
-            System.err.println("Usage: java -jar treasure-map.jar <inputFile> <outputFile> --verbose (optional)");
+            System.err.println("Usage: java -jar ./target/treasure-map-1.0-SNAPSHOT.jar <inputFile> <outputFile> --verbose (optional)");
             return;
         }
         String inputFilePath = args[0];
