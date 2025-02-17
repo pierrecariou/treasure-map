@@ -51,9 +51,7 @@ class FileParserTest {
 
         List<Adventurer> adventurers = new ArrayList<>();
 
-        Exception exception = assertThrows(NullPointerException.class, () -> {
-            FileParser.parseMap(tempFile.toString(), adventurers);
-        });
+        Exception exception = assertThrows(NullPointerException.class, () -> FileParser.parseMap(tempFile.toString(), adventurers));
 
         assertTrue(exception.getMessage().contains("Map size must be defined"));
     }
@@ -71,9 +69,7 @@ class FileParserTest {
 
         List<Adventurer> adventurers = new ArrayList<>();
 
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            FileParser.parseMap(tempFile.toString(), adventurers);
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> FileParser.parseMap(tempFile.toString(), adventurers));
 
         assertTrue(exception.getMessage().contains("Unknown line type"));
     }
@@ -91,9 +87,7 @@ class FileParserTest {
 
         List<Adventurer> adventurers = new ArrayList<>();
 
-        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
-            FileParser.parseMap(tempFile.toString(), adventurers);
-        });
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> FileParser.parseMap(tempFile.toString(), adventurers));
 
         assertTrue(exception.getMessage().contains("Invalid coordinates"));
     }
