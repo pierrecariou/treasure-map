@@ -2,12 +2,12 @@
 
 made with JAVA 23
 
-## BUILD
+### BUILD
 - mvn clean package
-## RUN
+### RUN
 - java -jar ./target/treasure-map-1.0-SNAPSHOT.jar <inputFile> <outputFile> --verbose (optional)
 - (Verbose mode prints the game state at each turn.)
-## RUN TESTS
+### RUN TESTS
 - mvn test
 
 **Author: Pierre Cariou**, Enjoy!
